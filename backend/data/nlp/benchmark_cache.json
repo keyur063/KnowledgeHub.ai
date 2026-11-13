@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-11-13T10:28:52Z",
+  "timestamp": "2026-11-13T18:01:09Z",
   "benchmark_info": {
-    "questions_count": 40,
+    "questions_count": 65,
     "documents_indexed": 6,
     "chunks_indexed": 13,
     "intent_categories": [
@@ -16,34 +16,34 @@
       "tfidf": {
         "name": "TF-IDF (Keyword Baseline)",
         "precision_at_5": 0.2,
-        "recall_at_5": 1.0,
-        "mrr": 0.9875,
-        "avg_latency_ms": 0.71,
-        "samples_evaluated": 40
+        "recall_at_5": 0.9128,
+        "mrr": 0.9923,
+        "avg_latency_ms": 0.81,
+        "samples_evaluated": 65
       },
       "semantic": {
         "name": "SentenceTransformer (Semantic)",
         "precision_at_5": 0.2,
-        "recall_at_5": 1.0,
-        "mrr": 0.9875,
-        "avg_latency_ms": 35.71,
-        "samples_evaluated": 40
+        "recall_at_5": 0.9128,
+        "mrr": 0.9769,
+        "avg_latency_ms": 24.66,
+        "samples_evaluated": 65
       },
       "hybrid": {
         "name": "Hybrid Fusion (alpha=0.5)",
         "precision_at_5": 0.2,
-        "recall_at_5": 1.0,
-        "mrr": 0.9875,
-        "avg_latency_ms": 36.42,
-        "samples_evaluated": 40
+        "recall_at_5": 0.9128,
+        "mrr": 0.9923,
+        "avg_latency_ms": 25.46,
+        "samples_evaluated": 65
       },
       "hybrid_intent": {
         "name": "Hybrid + Intent Filter",
-        "precision_at_5": 0.19,
-        "recall_at_5": 0.95,
-        "mrr": 0.9375,
-        "avg_latency_ms": 37.62,
-        "samples_evaluated": 40
+        "precision_at_5": 0.1938,
+        "recall_at_5": 0.8821,
+        "mrr": 0.9615,
+        "avg_latency_ms": 26.66,
+        "samples_evaluated": 65
       }
     },
     "chart_comparison": [
@@ -51,33 +51,33 @@
         "mode": "TF-IDF (Keyword Baseline)",
         "key": "tfidf",
         "precision_at_5": 0.2,
-        "recall_at_5": 1.0,
-        "mrr": 0.9875,
-        "latency_ms": 0.71
+        "recall_at_5": 0.9128,
+        "mrr": 0.9923,
+        "latency_ms": 0.81
       },
       {
         "mode": "SentenceTransformer (Semantic)",
         "key": "semantic",
         "precision_at_5": 0.2,
-        "recall_at_5": 1.0,
-        "mrr": 0.9875,
-        "latency_ms": 35.71
+        "recall_at_5": 0.9128,
+        "mrr": 0.9769,
+        "latency_ms": 24.66
       },
       {
         "mode": "Hybrid Fusion (alpha=0.5)",
         "key": "hybrid",
         "precision_at_5": 0.2,
-        "recall_at_5": 1.0,
-        "mrr": 0.9875,
-        "latency_ms": 36.42
+        "recall_at_5": 0.9128,
+        "mrr": 0.9923,
+        "latency_ms": 25.46
       },
       {
         "mode": "Hybrid + Intent Filter",
         "key": "hybrid_intent",
-        "precision_at_5": 0.19,
-        "recall_at_5": 0.95,
-        "mrr": 0.9375,
-        "latency_ms": 37.62
+        "precision_at_5": 0.1938,
+        "recall_at_5": 0.8821,
+        "mrr": 0.9615,
+        "latency_ms": 26.66
       }
     ],
     "best_retriever": "tfidf"
@@ -243,29 +243,29 @@
     }
   },
   "ner": {
-    "total_benchmark_questions": 40,
-    "total_expected_entities": 140,
-    "total_extracted_entities": 66,
-    "true_positives": 41,
-    "precision": 0.6212,
-    "recall": 0.2929,
-    "f1_score": 0.3981,
-    "accuracy": 0.2929,
+    "total_benchmark_questions": 65,
+    "total_expected_entities": 182,
+    "total_extracted_entities": 102,
+    "true_positives": 70,
+    "precision": 0.6863,
+    "recall": 0.3846,
+    "f1_score": 0.493,
+    "accuracy": 0.3846,
     "label_breakdown": {
       "DURATION": {
-        "expected": 33,
-        "true_positives": 5,
-        "recall": 0.1515
+        "expected": 43,
+        "true_positives": 10,
+        "recall": 0.2326
       },
       "LEAVE_TYPE": {
-        "expected": 15,
-        "true_positives": 11,
-        "recall": 0.7333
+        "expected": 20,
+        "true_positives": 16,
+        "recall": 0.8
       },
       "ELIGIBILITY_PERIOD": {
-        "expected": 4,
-        "true_positives": 2,
-        "recall": 0.5
+        "expected": 7,
+        "true_positives": 5,
+        "recall": 0.7143
       },
       "DATE": {
         "expected": 6,
@@ -273,14 +273,14 @@
         "recall": 0.6667
       },
       "ORG": {
-        "expected": 35,
-        "true_positives": 14,
-        "recall": 0.4
+        "expected": 49,
+        "true_positives": 23,
+        "recall": 0.4694
       },
       "LAW": {
-        "expected": 1,
-        "true_positives": 0,
-        "recall": 0.0
+        "expected": 3,
+        "true_positives": 1,
+        "recall": 0.3333
       },
       "TIME": {
         "expected": 7,
@@ -298,9 +298,9 @@
         "recall": 0.0
       },
       "PRODUCT": {
-        "expected": 13,
-        "true_positives": 3,
-        "recall": 0.2308
+        "expected": 18,
+        "true_positives": 6,
+        "recall": 0.3333
       },
       "CARDINAL": {
         "expected": 2,
@@ -313,9 +313,9 @@
         "recall": 0.0
       },
       "MONEY": {
-        "expected": 6,
-        "true_positives": 2,
-        "recall": 0.3333
+        "expected": 9,
+        "true_positives": 5,
+        "recall": 0.5556
       },
       "CATEGORY": {
         "expected": 3,
@@ -342,9 +342,9 @@
   "summary": {
     "retrieval_winner": "tfidf",
     "classification_winner": "svm",
-    "hybrid_mrr": 0.9875,
-    "tfidf_mrr": 0.9875,
-    "semantic_mrr": 0.9875,
-    "ner_f1": 0.3981
+    "hybrid_mrr": 0.9923,
+    "tfidf_mrr": 0.9923,
+    "semantic_mrr": 0.9769,
+    "ner_f1": 0.493
   }
 }

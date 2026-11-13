@@ -29,9 +29,15 @@ logger = logging.getLogger(__name__)
 # Intent-to-Document Category Mapping
 INTENT_TO_DOC_CATEGORIES = {
     "Leave Policy": ["HR"],
+    "leave_policy": ["HR"],
     "Reimbursement": ["Finance"],
+    "reimbursement": ["Finance"],
     "Approval Workflow": ["HR", "IT", "Finance", "Compliance", "Operations"],
+    "approval_workflow": ["HR", "IT", "Finance", "Compliance", "Operations"],
     "Employment Policy": ["HR", "Compliance", "IT"],
+    "employment_policy": ["HR", "Compliance", "IT"],
+    "it_setup": ["IT"],
+    "compliance": ["Compliance"],
 }
 
 

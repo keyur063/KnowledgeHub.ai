@@ -1,5 +1,5 @@
 """
-Test suite for DSPAMC KnowledgeHub RAG and internal documents.
+Test suite for KnowledgeHub RAG and internal documents.
 """
 
 import os
@@ -12,7 +12,7 @@ from app.services.knowledge_service import KnowledgeService
 
 
 class TestKnowledgeHubRAG:
-    """Validate DSPAMC document retrieval, citations, and workflows."""
+    """Validate document retrieval, citations, and workflows."""
 
     def test_leave_policy_query(self):
         res = KnowledgeService.query_knowledge_base("How do I apply for leave?")

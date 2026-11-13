@@ -1,5 +1,169 @@
 [
   {
+    "id": "conv_welcome",
+    "title": "Who is the designated reporting manager for appr",
+    "created_at": "2026-11-13T18:11:42.132Z",
+    "updated_at": "2026-11-13T18:11:42.166040+00:00",
+    "pinned": false,
+    "messages": [
+      {
+        "id": "msg_u_1794593460135",
+        "role": "user",
+        "content": "What is the paternity leave policy?",
+        "sources": [],
+        "citations": [],
+        "follow_up_suggestions": [],
+        "timestamp": "2026-11-13T18:11:00.135Z"
+      },
+      {
+        "id": "msg_a_1794593460193",
+        "role": "assistant",
+        "content": "### DSPAMC Leave Entitlements Summary (FY2026-27)\n\n\u2022 **Earned Leave (EL)**: 18 days credited quarterly (4.5 days per quarter). Carry-forward is capped at a maximum of **45 days**.\n\u2022 **Casual / Sick Leave (CL/SL)**: 12 days credited annually on April 1st.\n\u2022 **Maternity Leave**: 26 weeks paid leave per the Maternity Benefit Act.\n\u2022 **Paternity Leave**: 10 working days paid leave (taken within 6 months of childbirth).\n\u2022 **Bereavement Leave**: 5 working days paid leave.",
+        "sources": [],
+        "citations": [
+          {
+            "document_id": "DSP-HR-001",
+            "document_title": "DSPAMC Employee Leave & Absence Policy 2026",
+            "section": "Section 4.1: Leave Entitlements & Annual Quota",
+            "snippet": "Employees are credited with 18 days of Earned Annual Leave (EL) per financial year, accrued on a quarterly basis (4.5 days per quarter). In addition, all full-time employees receive 12 days of Casual/Sick Leave (CL/SL) annually credited on April 1st. Unutilized EL may be carried forward up to a maximum cap of 45 days. Any EL accumulated beyond 45 days is subject to mandatory encashment or forfeiture as per AMFI/DSPAMC governance standards.",
+            "relevance": 0.96,
+            "category": "HR",
+            "verified": true,
+            "effective_date": "2025-01-01",
+            "version": "2.0",
+            "excerpt": "Employees are credited with 18 days of Earned Annual Leave (EL) per financial year, accrued on a quarterly basis (4.5 days per quarter). In addition, all full-time employees receive 12 days of Casual/Sick Leave (CL/SL) annually credited on April 1st. Unutilized EL may be carried forward up to a maximum cap of 45 days. Any EL accumulated beyond 45 days is subject to mandatory encashment or forfeiture as per AMFI/DSPAMC governance standards.",
+            "relevance_score": 0.96,
+            "url": ""
+          },
+          {
+            "document_id": "DSP-HR-001",
+            "document_title": "DSPAMC Employee Leave & Absence Policy 2026",
+            "section": "Section 6.1: Parental & Special Leaves",
+            "snippet": "Female employees are entitled to 26 weeks of paid Maternity Leave in accordance with the Maternity Benefit Act. Male employees receive 10 working days of paid Paternity Leave, which may be taken continuously or in two tranches within 6 months following childbirth. DSPAMC also provides 5 working days of paid Bereavement Leave and 12 weeks of Adoption Leave.",
+            "relevance": 0.94,
+            "category": "HR",
+            "verified": true,
+            "effective_date": "2025-01-01",
+            "version": "2.0",
+            "excerpt": "Female employees are entitled to 26 weeks of paid Maternity Leave in accordance with the Maternity Benefit Act. Male employees receive 10 working days of paid Paternity Leave, which may be taken continuously or in two tranches within 6 months following childbirth. DSPAMC also provides 5 working days of paid Bereavement Leave and 12 weeks of Adoption Leave.",
+            "relevance_score": 0.94,
+            "url": ""
+          }
+        ],
+        "follow_up_suggestions": [],
+        "timestamp": "2026-11-13T18:11:00.193Z"
+      },
+      {
+        "id": "msg_u_1794593478066",
+        "role": "user",
+        "content": "Who is my reporting manager?",
+        "sources": [],
+        "citations": [],
+        "follow_up_suggestions": [],
+        "timestamp": "2026-11-13T18:11:18.066Z"
+      },
+      {
+        "id": "msg_a_1794593478383",
+        "role": "assistant",
+        "content": "Based on the official policy guidelines for **DSPAMC Employee Leave & Absence Policy 2026**:\n\n**Section 4.2: How to Apply for Leave & Workflow (Page 12)**\n1. Access the DSP PeoplePulse HRMS portal (https://peoplepulse.dspamc.com/leave) using your Single Sign-On (SSO) credentials.\n2. Navigate to 'My Workspace' > 'Leave Management' > 'Apply Leave'.\n3. Select the leave category (Earned Leave, Casual Leave, Sick Leave, or Compensatory Off), enter the start/end dates, and state the handover delegate.\n4. For leaves exceeding 3 consecutive business days, submission must be completed at least 7 working days in advance.\n5. Your Reporting Manager has a 48-hour SLA to approve or reject the request. Automatic escalation to the Department Head occurs if unaddressed after 72 hours.\n\n**Section 3.1: Role-Based IT Access Requests (RBAC) (Page 8)**\nTo request access to internal applications, databases, or specialized market software:\n1. Log into the DSP ServiceHub Portal (https://servicehub.dspamc.com/access-request).\n2. Select 'Service Catalog' > 'Identity & Access Management' > 'Application Access Request'.\n3. Choose the target system: Bloomberg Terminal, Refinitiv Eikon, Qdrant Vector Store, PostgreSQL Analytical DB, or Internal Git Repositories.\n4. Specify your business rationale and required privilege level (Read-Only vs Read-Write).\n5. Workflow: Direct Line Manager approves -> InfoSec compliance validation -> System auto-provisions within 24 hours.\n\n**Section 5.3: Expense Claim Submission Process & Deadlines (Page 16)**\nThe submission workflow for business expense claims is as follows:\n1. File claims exclusively via SAP Concur (https://expenses.dspamc.com) or the Concur Mobile App.\n2. All expenses must be submitted within 30 calendar days from the date of expenditure. Claims filed after 45 days will be automatically rejected unless granted exceptional CFO approval.\n3. Attach scanned, itemized tax invoices displaying the vendor's GSTIN and DSP Asset Managers Private Limited GSTIN.\n4. Approval chain: Line Manager approves -> Accounts Team verifies tax codes -> Direct bank credit via NEFT within 5 business days.",
+        "sources": [],
+        "citations": [
+          {
+            "document_id": "DSP-HR-001",
+            "document_title": "DSPAMC Employee Leave & Absence Policy 2026",
+            "section": "Section 4.2: How to Apply for Leave & Workflow",
+            "snippet": "1. Access the DSP PeoplePulse HRMS portal (https://peoplepulse.dspamc.com/leave) using your Single Sign-On (SSO) credentials.\n2. Navigate to 'My Workspace' > 'Leave Management' > 'Apply Leave'.\n3. Select the leave category (Earned Leave, Casual Leave, Sick Leave, or Compensatory Off), enter the start/end dates, and state the handover delegate.\n4. F...",
+            "relevance": 0.1797,
+            "category": "HR",
+            "verified": true,
+            "effective_date": "2025-01-01",
+            "version": "2.0",
+            "excerpt": "1. Access the DSP PeoplePulse HRMS portal (https://peoplepulse.dspamc.com/leave) using your Single Sign-On (SSO) credentials.\n2. Navigate to 'My Workspace' > 'Leave Management' > 'Apply Leave'.\n3. Select the leave category (Earned Leave, Casual Leave, Sick Leave, or Compensatory Off), enter the start/end dates, and state the handover delegate.\n4. F...",
+            "relevance_score": 0.1797,
+            "url": ""
+          },
+          {
+            "document_id": "DSP-IT-001",
+            "document_title": "DSPAMC Information Security & IAM SOP 2026",
+            "section": "Section 3.1: Role-Based IT Access Requests (RBAC)",
+            "snippet": "To request access to internal applications, databases, or specialized market software:\n1. Log into the DSP ServiceHub Portal (https://servicehub.dspamc.com/access-request).\n2. Select 'Service Catalog' > 'Identity & Access Management' > 'Application Access Request'.\n3. Choose the target system: Bloomberg Terminal, Refinitiv Eikon, Qdrant Vector Stor...",
+            "relevance": 0.1225,
+            "category": "IT",
+            "verified": true,
+            "effective_date": "2025-01-01",
+            "version": "2.0",
+            "excerpt": "To request access to internal applications, databases, or specialized market software:\n1. Log into the DSP ServiceHub Portal (https://servicehub.dspamc.com/access-request).\n2. Select 'Service Catalog' > 'Identity & Access Management' > 'Application Access Request'.\n3. Choose the target system: Bloomberg Terminal, Refinitiv Eikon, Qdrant Vector Stor...",
+            "relevance_score": 0.1225,
+            "url": ""
+          },
+          {
+            "document_id": "DSP-FIN-001",
+            "document_title": "DSPAMC Travel & Business Expense Reimbursement Policy",
+            "section": "Section 5.3: Expense Claim Submission Process & Deadlines",
+            "snippet": "The submission workflow for business expense claims is as follows:\n1. File claims exclusively via SAP Concur (https://expenses.dspamc.com) or the Concur Mobile App.\n2. All expenses must be submitted within 30 calendar days from the date of expenditure. Claims filed after 45 days will be automatically rejected unless granted exceptional CFO approval...",
+            "relevance": 0.0937,
+            "category": "Finance",
+            "verified": true,
+            "effective_date": "2025-01-01",
+            "version": "2.0",
+            "excerpt": "The submission workflow for business expense claims is as follows:\n1. File claims exclusively via SAP Concur (https://expenses.dspamc.com) or the Concur Mobile App.\n2. All expenses must be submitted within 30 calendar days from the date of expenditure. Claims filed after 45 days will be automatically rejected unless granted exceptional CFO approval...",
+            "relevance_score": 0.0937,
+            "url": ""
+          }
+        ],
+        "follow_up_suggestions": [],
+        "timestamp": "2026-11-13T18:11:18.383Z"
+      },
+      {
+        "id": "msg_u_1794593502042",
+        "role": "user",
+        "content": "Who is the designated reporting manager for approvals?",
+        "sources": [],
+        "citations": [],
+        "follow_up_suggestions": [],
+        "timestamp": "2026-11-13T18:11:42.042Z"
+      },
+      {
+        "id": "msg_a_1794593502132",
+        "role": "assistant",
+        "content": "Based on **DSPAMC Employee Leave & Absence Policy 2026** (v4.2 (FY2026-27)), issued by the Human Resources:\n\n**Section 4.2: How to Apply for Leave & Workflow (Page 12)**\n1. Access the DSP PeoplePulse HRMS portal (https://peoplepulse.dspamc.com/leave) using your Single Sign-On (SSO) credentials.\n2. Navigate to 'My Workspace' > 'Leave Management' > 'Apply Leave'.\n3. Select the leave category (Earned Leave, Casual Leave, Sick Leave, or Compensatory Off), enter the start/end dates, and state the handover delegate.\n4. For leaves exceeding 3 consecutive business days, submission must be completed at least 7 working days in advance.\n5. Your Reporting Manager has a 48-hour SLA to approve or reject the request. Automatic escalation to the Department Head occurs if unaddressed after 72 hours.\n\n**Section 4.1: Leave Entitlements & Annual Quota (Page 11)**\nEmployees are credited with 18 days of Earned Annual Leave (EL) per financial year, accrued on a quarterly basis (4.5 days per quarter). In addition, all full-time employees receive 12 days of Casual/Sick Leave (CL/SL) annually credited on April 1st. Unutilized EL may be carried forward up to a maximum cap of 45 days. Any EL accumulated beyond 45 days is subject to mandatory encashment or forfeiture as per AMFI/DSPAMC governance standards.\n",
+        "sources": [],
+        "citations": [
+          {
+            "document_id": "DSP-HR-001",
+            "document_title": "DSPAMC Employee Leave & Absence Policy 2026",
+            "section": "Section 4.2: How to Apply for Leave & Workflow",
+            "snippet": "1. Access the DSP PeoplePulse HRMS portal (https://peoplepulse.dspamc.com/leave) using your Single Sign-On (SSO) credentials.\n2. Navigate to 'My Workspace' > 'Leave Management' > 'Apply Leave'.\n3. Select the leave category (Earned Leave, Casual Leave, Sick Leave, or Compensatory ...",
+            "relevance": 0.78,
+            "category": "HR",
+            "verified": true,
+            "effective_date": "2025-01-01",
+            "version": "2.0",
+            "excerpt": "1. Access the DSP PeoplePulse HRMS portal (https://peoplepulse.dspamc.com/leave) using your Single Sign-On (SSO) credentials.\n2. Navigate to 'My Workspace' > 'Leave Management' > 'Apply Leave'.\n3. Select the leave category (Earned Leave, Casual Leave, Sick Leave, or Compensatory ...",
+            "relevance_score": 0.78,
+            "url": ""
+          },
+          {
+            "document_id": "DSP-HR-001",
+            "document_title": "DSPAMC Employee Leave & Absence Policy 2026",
+            "section": "Section 4.1: Leave Entitlements & Annual Quota",
+            "snippet": "Employees are credited with 18 days of Earned Annual Leave (EL) per financial year, accrued on a quarterly basis (4.5 days per quarter). In addition, all full-time employees receive 12 days of Casual/Sick Leave (CL/SL) annually credited on April 1st. Unutilized EL may be carried ...",
+            "relevance": 0.67,
+            "category": "HR",
+            "verified": true,
+            "effective_date": "2025-01-01",
+            "version": "2.0",
+            "excerpt": "Employees are credited with 18 days of Earned Annual Leave (EL) per financial year, accrued on a quarterly basis (4.5 days per quarter). In addition, all full-time employees receive 12 days of Casual/Sick Leave (CL/SL) annually credited on April 1st. Unutilized EL may be carried ...",
+            "relevance_score": 0.67,
+            "url": ""
+          }
+        ],
+        "follow_up_suggestions": [],
+        "timestamp": "2026-11-13T18:11:42.132Z"
+      }
+    ]
+  },
+  {
     "id": "conv_1791870952662",
     "title": "How do I apply for leave on the People...",
     "created_at": "2026-10-13T06:04:42.233Z",

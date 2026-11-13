@@ -174,7 +174,7 @@ class HREntityExtractor:
         per_label_stats: Dict[str, Dict[str, int]] = {}
 
         for item in benchmark_items:
-            query = item["query"]
+            query = item.get("question") or item.get("query", "")
             expected_list = item.get("expected_entities", [])
             total_expected += len(expected_list)
 

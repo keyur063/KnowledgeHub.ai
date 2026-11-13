@@ -1,5 +1,5 @@
 """
-DSP KnowledgeHub AI – Employee Self-Service Portal - Application Configuration
+KnowledgeHub AI – Employee Self-Service Portal - Application Configuration
 
 Centralizes all configuration from environment variables.
 Uses pydantic-settings for type-safe config with validation.
@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     )
 
     # --- Application ---
-    app_name: str = "DSP KnowledgeHub AI – Employee Self-Service Portal"
+    app_name: str = "KnowledgeHub AI – Employee Self-Service Portal"
     app_env: str = "development"
     app_debug: bool = True
     app_port: int = 8000

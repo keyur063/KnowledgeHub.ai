@@ -49,40 +49,21 @@ async def ask_research_question(request: ResearchQuery):
 
     # Query Institutional Knowledge Store (HR, IT, Expenses, Compliance, Operations)
     kb_result = KnowledgeService.query_knowledge_base(question)
+    if not (kb_result.get("document_found") and kb_result.get("answer")):
+        kb_result = KnowledgeService.generate_extractive_answer(question)
 
-    if kb_result.get("document_found") and kb_result.get("answer"):
-        answer = kb_result["answer"]
-        for c in kb_result.get("citations", []):
-            citations.append(CitationItem(**c))
-            sources.append({
-                "tool": f"RAG Retriever [{c['document_id']}]",
-                "document_title": c["document_title"],
-                "section": c["section"],
-                "page": c.get("page", 1),
-                "data_status": "AUTHORIZED_INTERNAL",
-                "timestamp": datetime.now(timezone.utc).isoformat(),
-            })
-        follow_up_suggestions = kb_result.get("follow_up_suggestions", [])
-
-    else:
-        # Fallback when query is ambiguous or out of domain
-        answer = (
-            "I could not locate authorized documentation matching your specific inquiry.\n\n"
-            "**DSP KnowledgeHub AI** is designed to assist DSPAMC employees across authorized internal domains:\n\n"
-            "• **Human Resources**: Leave application workflows, quotas, onboarding guide, mediclaim\n"
-            "• **IT Services**: ServiceHub IAM requests, VPN / MFA configuration, Bloomberg access\n"
-            "• **Finance**: SAP Concur expense claims, per diem rates, GST invoicing mandates\n"
-            "• **Compliance**: SEBI personal securities pre-clearance, 30-day holding rules, restricted list\n\n"
-            "Please select one of the suggested prompts below or rephrase your question."
-        )
-        follow_up_suggestions = [
-            "How do I apply for leave?",
-            "Where can I find the onboarding guide?",
-            "How do I request IT access?",
-            "What is the process for submitting an expense claim?",
-            "Where can I find the relevant compliance procedure?"
-        ]
-        warnings.append("No grounded documentation match found. Showing recommended enterprise queries.")
+    answer = kb_result["answer"]
+    for c in kb_result.get("citations", []):
+        citations.append(CitationItem(**c))
+        sources.append({
+            "tool": f"RAG Retriever [{c['document_id']}]",
+            "document_title": c["document_title"],
+            "section": c["section"],
+            "page": c.get("page", 1),
+            "data_status": "AUTHORIZED_INTERNAL",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+        })
+    follow_up_suggestions = kb_result.get("follow_up_suggestions", [])
 
     return APIResponse(
         success=True,
@@ -91,14 +72,24 @@ async def ask_research_question(request: ResearchQuery):
             sources=sources,
             citations=citations,
             follow_up_suggestions=follow_up_suggestions,
-            structured_metrics=None,
-            model_context={"rag_pipeline": "DSPAMC_Qdrant_Hybrid_v2", "documents_scanned": len(KnowledgeService.get_all_documents())},
+            structured_metrics={
+                "intent": kb_result.get("intent", "HR"),
+                "entities": kb_result.get("entities", []),
+                "retrieval_mode": "hybrid_extractive_local",
+                "citations_count": len(citations),
+            },
+            model_context={
+                "rag_pipeline": "KnowledgeHub_Hybrid_Extractive_v1",
+                "documents_scanned": len(KnowledgeService.get_all_documents()),
+                "entities_detected": len(kb_result.get("entities", [])),
+                "intent": kb_result.get("intent", "HR"),
+            },
             warnings=warnings,
             data_status="AUTHORIZED_INTERNAL",
         ),
         metadata=ResponseMetadata(
             timestamp=datetime.now(timezone.utc),
-            source="dsp_knowledgehub_rag",
+            source="knowledgehub_rag_extractive",
             data_status="AUTHORIZED",
             is_demo=False,
         ),

@@ -1,5 +1,5 @@
 """
-NLP Evaluation Engine for DSP KnowledgeHub AI.
+NLP Evaluation Engine for KnowledgeHub AI.
 
 Runs quantitative evaluations against the ground-truth benchmark dataset (eval_benchmark.json):
 1. Information Retrieval Metrics:
@@ -61,7 +61,7 @@ class NLPEvaluationEngine:
         from app.nlp.intent_classifier import clean_text
 
         retriever = get_hybrid_retriever()
-        queries = [item["query"] for item in benchmark_data]
+        queries = [item.get("question") or item.get("query", "") for item in benchmark_data]
         cleaned_queries = [clean_text(q) for q in queries]
         num_queries = len(queries)
 
@@ -107,12 +107,13 @@ class NLPEvaluationEngine:
             reciprocal_ranks: List[float] = []
 
             for q_idx, item in enumerate(benchmark_data):
-                expected_chunks = set(item.get("expected_chunk_ids", []))
+                expected_chunks = set(item.get("expected_chunk_ids") or item.get("expected_chunks", []))
+                q_text = item.get("question") or item.get("query", "")
 
                 # Determine candidates
                 cat_filter = None
                 if auto_filter:
-                    pred = classifier.predict(item["query"])
+                    pred = classifier.predict(q_text)
                     if pred["confidence"] >= 0.40:
                         cat_filter = pred["intent"]
 

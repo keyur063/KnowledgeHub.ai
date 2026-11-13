@@ -1,7 +1,9 @@
 [
   {
     "id": "eval_001",
+    "question": "How many days of Earned Annual Leave are credited to employees per financial year?",
     "query": "How many days of Earned Annual Leave are credited to employees per financial year?",
+    "expected_intent": "leave_policy",
     "category": "Leave Policy",
     "expected_chunk_ids": [
       "DSP-HR-001_s1"
@@ -23,7 +25,9 @@
   },
   {
     "id": "eval_002",
+    "question": "What is the quarterly accrual rate for Earned Leave and the maximum carry forward cap?",
     "query": "What is the quarterly accrual rate for Earned Leave and the maximum carry forward cap?",
+    "expected_intent": "leave_policy",
     "category": "Leave Policy",
     "expected_chunk_ids": [
       "DSP-HR-001_s1"
@@ -45,7 +49,9 @@
   },
   {
     "id": "eval_003",
+    "question": "How many days of Casual/Sick Leave are credited annually on April 1st?",
     "query": "How many days of Casual/Sick Leave are credited annually on April 1st?",
+    "expected_intent": "leave_policy",
     "category": "Leave Policy",
     "expected_chunk_ids": [
       "DSP-HR-001_s1"
@@ -67,7 +73,9 @@
   },
   {
     "id": "eval_004",
+    "question": "How do employees apply for leave on the PeoplePulse HRMS portal?",
     "query": "How do employees apply for leave on the PeoplePulse HRMS portal?",
+    "expected_intent": "approval_workflow",
     "category": "Approval Workflow",
     "expected_chunk_ids": [
       "DSP-HR-001_s2"
@@ -93,7 +101,9 @@
   },
   {
     "id": "eval_005",
+    "question": "What is the manager approval SLA and advance notice required for leave over 3 consecutive business days?",
     "query": "What is the manager approval SLA and advance notice required for leave over 3 consecutive business days?",
+    "expected_intent": "approval_workflow",
     "category": "Approval Workflow",
     "expected_chunk_ids": [
       "DSP-HR-001_s2"
@@ -119,7 +129,9 @@
   },
   {
     "id": "eval_006",
+    "question": "How many weeks of paid Maternity Leave are female employees entitled to?",
     "query": "How many weeks of paid Maternity Leave are female employees entitled to?",
+    "expected_intent": "leave_policy",
     "category": "Leave Policy",
     "expected_chunk_ids": [
       "DSP-HR-001_s3"
@@ -141,7 +153,9 @@
   },
   {
     "id": "eval_007",
+    "question": "What is the Paternity Leave and Bereavement Leave duration granted to DSPAMC employees?",
     "query": "What is the Paternity Leave and Bereavement Leave duration granted to DSPAMC employees?",
+    "expected_intent": "leave_policy",
     "category": "Leave Policy",
     "expected_chunk_ids": [
       "DSP-HR-001_s3"
@@ -183,7 +197,9 @@
   },
   {
     "id": "eval_008",
+    "question": "Where and when should new hires report for Day 1 induction at DSPAMC?",
     "query": "Where and when should new hires report for Day 1 induction at DSPAMC?",
+    "expected_intent": "employment_policy",
     "category": "Employment Policy",
     "expected_chunk_ids": [
       "DSP-HR-002_s1"
@@ -213,7 +229,9 @@
   },
   {
     "id": "eval_009",
+    "question": "What statutory declarations must new joiners complete between Days 15 to 30?",
     "query": "What statutory declarations must new joiners complete between Days 15 to 30?",
+    "expected_intent": "employment_policy",
     "category": "Employment Policy",
     "expected_chunk_ids": [
       "DSP-HR-002_s1"
@@ -239,7 +257,9 @@
   },
   {
     "id": "eval_010",
+    "question": "Within how many calendar days must wealth advisors and research analysts obtain NISM certifications?",
     "query": "Within how many calendar days must wealth advisors and research analysts obtain NISM certifications?",
+    "expected_intent": "employment_policy",
     "category": "Employment Policy",
     "expected_chunk_ids": [
       "DSP-HR-002_s2"
@@ -265,7 +285,9 @@
   },
   {
     "id": "eval_011",
+    "question": "How do employees request access to Bloomberg Terminal or Qdrant Vector Store on ServiceHub?",
     "query": "How do employees request access to Bloomberg Terminal or Qdrant Vector Store on ServiceHub?",
+    "expected_intent": "approval_workflow",
     "category": "Approval Workflow",
     "expected_chunk_ids": [
       "DSP-IT-001_s1"
@@ -291,7 +313,9 @@
   },
   {
     "id": "eval_012",
+    "question": "What are the remote VPN and MFA authentication requirements for DSPAMC staff?",
     "query": "What are the remote VPN and MFA authentication requirements for DSPAMC staff?",
+    "expected_intent": "employment_policy",
     "category": "Employment Policy",
     "expected_chunk_ids": [
       "DSP-IT-001_s2"
@@ -321,7 +345,9 @@
   },
   {
     "id": "eval_013",
+    "question": "What is the submission deadline for filing travel expense claims via SAP Concur?",
     "query": "What is the submission deadline for filing travel expense claims via SAP Concur?",
+    "expected_intent": "reimbursement",
     "category": "Reimbursement",
     "expected_chunk_ids": [
       "DSP-FIN-001_s1"
@@ -351,7 +377,9 @@
   },
   {
     "id": "eval_014",
+    "question": "What are the metro accommodation cap and daily per diem subsistence allowance limits?",
     "query": "What are the metro accommodation cap and daily per diem subsistence allowance limits?",
+    "expected_intent": "reimbursement",
     "category": "Reimbursement",
     "expected_chunk_ids": [
       "DSP-FIN-001_s2"
@@ -381,7 +409,9 @@
   },
   {
     "id": "eval_015",
+    "question": "What is the pre-clearance validity period and holding rule under the SEBI personal trading code?",
     "query": "What is the pre-clearance validity period and holding rule under the SEBI personal trading code?",
+    "expected_intent": "employment_policy",
     "category": "Employment Policy",
     "expected_chunk_ids": [
       "DSP-COMP-001_s1"
@@ -407,7 +437,9 @@
   },
   {
     "id": "eval_016",
+    "question": "What is the Chinese Wall policy for Unpublished Price Sensitive Information (UPSI)?",
     "query": "What is the Chinese Wall policy for Unpublished Price Sensitive Information (UPSI)?",
+    "expected_intent": "employment_policy",
     "category": "Employment Policy",
     "expected_chunk_ids": [
       "DSP-COMP-001_s2"
@@ -429,7 +461,9 @@
   },
   {
     "id": "eval_017",
+    "question": "What are the trade settlement timeline and STP cut-off on trade day?",
     "query": "What are the trade settlement timeline and STP cut-off on trade day?",
+    "expected_intent": "approval_workflow",
     "category": "Approval Workflow",
     "expected_chunk_ids": [
       "DSP-OPS-001_s1"
@@ -455,7 +489,9 @@
   },
   {
     "id": "eval_018",
+    "question": "When are scheme NAVs calculated daily and disseminated to AMFI?",
     "query": "When are scheme NAVs calculated daily and disseminated to AMFI?",
+    "expected_intent": "approval_workflow",
     "category": "Approval Workflow",
     "expected_chunk_ids": [
       "DSP-OPS-001_s2"
@@ -477,7 +513,9 @@
   },
   {
     "id": "eval_019",
+    "question": "Can unutilized Earned Leave beyond 45 days be encashed by full-time employees?",
     "query": "Can unutilized Earned Leave beyond 45 days be encashed by full-time employees?",
+    "expected_intent": "leave_policy",
     "category": "Leave Policy",
     "expected_chunk_ids": [
       "DSP-HR-001_s1"
@@ -503,7 +541,9 @@
   },
   {
     "id": "eval_020",
+    "question": "What is the manager escalation timeline if a leave application is not actioned after 48 hours?",
     "query": "What is the manager escalation timeline if a leave application is not actioned after 48 hours?",
+    "expected_intent": "approval_workflow",
     "category": "Approval Workflow",
     "expected_chunk_ids": [
       "DSP-HR-001_s2"
@@ -525,7 +565,9 @@
   },
   {
     "id": "eval_021",
+    "question": "How many weeks of Adoption Leave are available to DSPAMC employees?",
     "query": "How many weeks of Adoption Leave are available to DSPAMC employees?",
+    "expected_intent": "leave_policy",
     "category": "Leave Policy",
     "expected_chunk_ids": [
       "DSP-HR-001_s3"
@@ -547,7 +589,9 @@
   },
   {
     "id": "eval_022",
+    "question": "What are the Day 1 induction activities for new employees arriving at One BKC Mumbai?",
     "query": "What are the Day 1 induction activities for new employees arriving at One BKC Mumbai?",
+    "expected_intent": "employment_policy",
     "category": "Employment Policy",
     "expected_chunk_ids": [
       "DSP-HR-002_s1"
@@ -569,7 +613,9 @@
   },
   {
     "id": "eval_023",
+    "question": "Who reimburses the exam registration fees for NISM-Series-XV certification?",
     "query": "Who reimburses the exam registration fees for NISM-Series-XV certification?",
+    "expected_intent": "reimbursement",
     "category": "Reimbursement",
     "expected_chunk_ids": [
       "DSP-HR-002_s2"
@@ -591,7 +637,9 @@
   },
   {
     "id": "eval_024",
+    "question": "What systems can be requested via the DSP ServiceHub application access portal?",
     "query": "What systems can be requested via the DSP ServiceHub application access portal?",
+    "expected_intent": "approval_workflow",
     "category": "Approval Workflow",
     "expected_chunk_ids": [
       "DSP-IT-001_s1"
@@ -617,7 +665,9 @@
   },
   {
     "id": "eval_025",
+    "question": "What password complexity rules and 90 days expiry are mandated for DSP accounts?",
     "query": "What password complexity rules and 90 days expiry are mandated for DSP accounts?",
+    "expected_intent": "employment_policy",
     "category": "Employment Policy",
     "expected_chunk_ids": [
       "DSP-IT-001_s2"
@@ -639,7 +689,9 @@
   },
   {
     "id": "eval_026",
+    "question": "Why are expense claims filed past 45 days rejected without CFO approval?",
     "query": "Why are expense claims filed past 45 days rejected without CFO approval?",
+    "expected_intent": "approval_workflow",
     "category": "Approval Workflow",
     "expected_chunk_ids": [
       "DSP-FIN-001_s1"
@@ -661,7 +713,9 @@
   },
   {
     "id": "eval_027",
+    "question": "What is the per diem incidental rate of \u20b91,800/day for Tier-1 metros?",
     "query": "What is the per diem incidental rate of \u20b91,800/day for Tier-1 metros?",
+    "expected_intent": "reimbursement",
     "category": "Reimbursement",
     "expected_chunk_ids": [
       "DSP-FIN-001_s2"
@@ -683,7 +737,9 @@
   },
   {
     "id": "eval_028",
+    "question": "How many days must Access Persons hold approved securities under the SEBI code?",
     "query": "How many days must Access Persons hold approved securities under the SEBI code?",
+    "expected_intent": "employment_policy",
     "category": "Employment Policy",
     "expected_chunk_ids": [
       "DSP-COMP-001_s1"
@@ -705,7 +761,9 @@
   },
   {
     "id": "eval_029",
+    "question": "What is the consequence of sharing Unpublished Price Sensitive Information without authorization?",
     "query": "What is the consequence of sharing Unpublished Price Sensitive Information without authorization?",
+    "expected_intent": "employment_policy",
     "category": "Employment Policy",
     "expected_chunk_ids": [
       "DSP-COMP-001_s2"
@@ -723,7 +781,9 @@
   },
   {
     "id": "eval_030",
+    "question": "How does automated Straight-Through Processing (STP) settle equity orders across NSE and BSE?",
     "query": "How does automated Straight-Through Processing (STP) settle equity orders across NSE and BSE?",
+    "expected_intent": "approval_workflow",
     "category": "Approval Workflow",
     "expected_chunk_ids": [
       "DSP-OPS-001_s1"
@@ -749,7 +809,9 @@
   },
   {
     "id": "eval_031",
+    "question": "Who must provide dual-signoff on mutual fund NAVs before 23:00 IST AMFI submission?",
     "query": "Who must provide dual-signoff on mutual fund NAVs before 23:00 IST AMFI submission?",
+    "expected_intent": "approval_workflow",
     "category": "Approval Workflow",
     "expected_chunk_ids": [
       "DSP-OPS-001_s2"
@@ -771,7 +833,9 @@
   },
   {
     "id": "eval_032",
+    "question": "How many days of Paternity Leave must be taken within 6 months of childbirth?",
     "query": "How many days of Paternity Leave must be taken within 6 months of childbirth?",
+    "expected_intent": "leave_policy",
     "category": "Leave Policy",
     "expected_chunk_ids": [
       "DSP-HR-001_s3"
@@ -793,7 +857,9 @@
   },
   {
     "id": "eval_033",
+    "question": "What is the flight travel class policy for Associate Vice Presidents and below?",
     "query": "What is the flight travel class policy for Associate Vice Presidents and below?",
+    "expected_intent": "reimbursement",
     "category": "Reimbursement",
     "expected_chunk_ids": [
       "DSP-FIN-001_s2"
@@ -815,7 +881,9 @@
   },
   {
     "id": "eval_034",
+    "question": "How long are trade pre-clearance approvals valid on the DSP ComplianceDesk portal?",
     "query": "How long are trade pre-clearance approvals valid on the DSP ComplianceDesk portal?",
+    "expected_intent": "approval_workflow",
     "category": "Approval Workflow",
     "expected_chunk_ids": [
       "DSP-COMP-001_s1"
@@ -833,7 +901,9 @@
   },
   {
     "id": "eval_035",
+    "question": "What IT workstation setup and Peer Buddy meeting take place during Week 1 onboarding?",
     "query": "What IT workstation setup and Peer Buddy meeting take place during Week 1 onboarding?",
+    "expected_intent": "employment_policy",
     "category": "Employment Policy",
     "expected_chunk_ids": [
       "DSP-HR-002_s1"
@@ -855,7 +925,9 @@
   },
   {
     "id": "eval_036",
+    "question": "What notice period must employees provide when applying for 4 days of Earned Leave?",
     "query": "What notice period must employees provide when applying for 4 days of Earned Leave?",
+    "expected_intent": "approval_workflow",
     "category": "Approval Workflow",
     "expected_chunk_ids": [
       "DSP-HR-001_s2"
@@ -877,7 +949,9 @@
   },
   {
     "id": "eval_037",
+    "question": "How is NEFT reimbursement credited within 5 business days after line manager approval?",
     "query": "How is NEFT reimbursement credited within 5 business days after line manager approval?",
+    "expected_intent": "reimbursement",
     "category": "Reimbursement",
     "expected_chunk_ids": [
       "DSP-FIN-001_s1"
@@ -899,7 +973,9 @@
   },
   {
     "id": "eval_038",
+    "question": "What is the accommodation limit of \u20b95,500/night for non-metro business trips?",
     "query": "What is the accommodation limit of \u20b95,500/night for non-metro business trips?",
+    "expected_intent": "reimbursement",
     "category": "Reimbursement",
     "expected_chunk_ids": [
       "DSP-FIN-001_s2"
@@ -917,7 +993,9 @@
   },
   {
     "id": "eval_039",
+    "question": "Why are trades in securities listed on the DSP Restricted List automatically denied pre-clearance?",
     "query": "Why are trades in securities listed on the DSP Restricted List automatically denied pre-clearance?",
+    "expected_intent": "employment_policy",
     "category": "Employment Policy",
     "expected_chunk_ids": [
       "DSP-COMP-001_s1"
@@ -939,7 +1017,9 @@
   },
   {
     "id": "eval_040",
+    "question": "How many days of paid Bereavement Leave does DSPAMC offer for grieving employees?",
     "query": "How many days of paid Bereavement Leave does DSPAMC offer for grieving employees?",
+    "expected_intent": "leave_policy",
     "category": "Leave Policy",
     "expected_chunk_ids": [
       "DSP-HR-001_s3"
@@ -958,5 +1038,485 @@
         "label": "ORG"
       }
     ]
+  },
+  {
+    "question": "How many days of annual leave do I get after 12 months?",
+    "query": "How many days of annual leave do I get after 12 months?",
+    "expected_intent": "leave_policy",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s1",
+      "leave_policy_section_2",
+      "leave_entitlement_01"
+    ],
+    "expected_entities": [
+      {
+        "text": "annual leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "12 months",
+        "label": "ELIGIBILITY_PERIOD"
+      }
+    ],
+    "id": "eval_041"
+  },
+  {
+    "question": "What is the maximum carry-forward cap for earned leave?",
+    "query": "What is the maximum carry-forward cap for earned leave?",
+    "expected_intent": "leave_policy",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s1",
+      "leave_policy_section_1"
+    ],
+    "expected_entities": [
+      {
+        "text": "earned leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "45 days",
+        "label": "DURATION"
+      }
+    ],
+    "id": "eval_042"
+  },
+  {
+    "question": "How many weeks of maternity leave are female employees entitled to under the Maternity Benefit Act?",
+    "query": "How many weeks of maternity leave are female employees entitled to under the Maternity Benefit Act?",
+    "expected_intent": "leave_policy",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s3",
+      "leave_policy_parental"
+    ],
+    "expected_entities": [
+      {
+        "text": "maternity leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "26 weeks",
+        "label": "DURATION"
+      },
+      {
+        "text": "Maternity Benefit Act",
+        "label": "LAW"
+      }
+    ],
+    "id": "eval_043"
+  },
+  {
+    "question": "How do I apply for casual leave on PeoplePulse portal?",
+    "query": "How do I apply for casual leave on PeoplePulse portal?",
+    "expected_intent": "leave_policy",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s2",
+      "leave_workflow_section"
+    ],
+    "expected_entities": [
+      {
+        "text": "casual leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "PeoplePulse",
+        "label": "ORG"
+      }
+    ],
+    "id": "eval_044"
+  },
+  {
+    "question": "Can a male employee take 10 working days of paternity leave within 6 months?",
+    "query": "Can a male employee take 10 working days of paternity leave within 6 months?",
+    "expected_intent": "leave_policy",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s3",
+      "paternity_leave_section"
+    ],
+    "expected_entities": [
+      {
+        "text": "paternity leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "10 working days",
+        "label": "DURATION"
+      },
+      {
+        "text": "6 months",
+        "label": "ELIGIBILITY_PERIOD"
+      }
+    ],
+    "id": "eval_045"
+  },
+  {
+    "question": "Is 7 working days advance notice required for 3 consecutive business days of leave?",
+    "query": "Is 7 working days advance notice required for 3 consecutive business days of leave?",
+    "expected_intent": "leave_policy",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "7 working days",
+        "label": "DURATION"
+      },
+      {
+        "text": "3 consecutive business days",
+        "label": "DURATION"
+      }
+    ],
+    "id": "eval_046"
+  },
+  {
+    "question": "What is the daily per diem allowance of \u20b91,800 for Tier-1 cities?",
+    "query": "What is the daily per diem allowance of \u20b91,800 for Tier-1 cities?",
+    "expected_intent": "reimbursement",
+    "category": "Reimbursement",
+    "expected_chunk_ids": [
+      "DSP-FIN-001_s2",
+      "per_diem_section"
+    ],
+    "expected_entities": [
+      {
+        "text": "\u20b91,800",
+        "label": "MONEY"
+      }
+    ],
+    "id": "eval_047"
+  },
+  {
+    "question": "What is the lodging accommodation cap of \u20b98,500 per night for business travel?",
+    "query": "What is the lodging accommodation cap of \u20b98,500 per night for business travel?",
+    "expected_intent": "reimbursement",
+    "category": "Reimbursement",
+    "expected_chunk_ids": [
+      "DSP-FIN-001_s2",
+      "lodging_expense_section"
+    ],
+    "expected_entities": [
+      {
+        "text": "\u20b98,500",
+        "label": "MONEY"
+      }
+    ],
+    "id": "eval_048"
+  },
+  {
+    "question": "How do I file travel expense claims on SAP Concur within 30 calendar days?",
+    "query": "How do I file travel expense claims on SAP Concur within 30 calendar days?",
+    "expected_intent": "reimbursement",
+    "category": "Reimbursement",
+    "expected_chunk_ids": [
+      "DSP-FIN-001_s1",
+      "concur_claim_section"
+    ],
+    "expected_entities": [
+      {
+        "text": "SAP Concur",
+        "label": "ORG"
+      },
+      {
+        "text": "30 calendar days",
+        "label": "DURATION"
+      }
+    ],
+    "id": "eval_049"
+  },
+  {
+    "question": "Can business expense claims be submitted without an itemized GST tax invoice?",
+    "query": "Can business expense claims be submitted without an itemized GST tax invoice?",
+    "expected_intent": "reimbursement",
+    "category": "Reimbursement",
+    "expected_chunk_ids": [
+      "DSP-FIN-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "SAP Concur",
+        "label": "ORG"
+      }
+    ],
+    "id": "eval_050"
+  },
+  {
+    "question": "Are hotel accommodation expenses above \u20b910,000 eligible for reimbursement?",
+    "query": "Are hotel accommodation expenses above \u20b910,000 eligible for reimbursement?",
+    "expected_intent": "reimbursement",
+    "category": "Reimbursement",
+    "expected_chunk_ids": [
+      "DSP-FIN-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "\u20b910,000",
+        "label": "MONEY"
+      }
+    ],
+    "id": "eval_051"
+  },
+  {
+    "question": "What is the reimbursement timeline for travel claims submitted via SAP Concur?",
+    "query": "What is the reimbursement timeline for travel claims submitted via SAP Concur?",
+    "expected_intent": "reimbursement",
+    "category": "Reimbursement",
+    "expected_chunk_ids": [
+      "DSP-FIN-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "SAP Concur",
+        "label": "ORG"
+      }
+    ],
+    "id": "eval_052"
+  },
+  {
+    "question": "How do I request Bloomberg terminal access on ServiceHub?",
+    "query": "How do I request Bloomberg terminal access on ServiceHub?",
+    "expected_intent": "it_setup",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-IT-001_s1",
+      "it_access_terminal"
+    ],
+    "expected_entities": [
+      {
+        "text": "Bloomberg",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "ServiceHub",
+        "label": "ORG"
+      }
+    ],
+    "id": "eval_053"
+  },
+  {
+    "question": "What is the 24-hour SLA for role-based application provisioning on ServiceHub?",
+    "query": "What is the 24-hour SLA for role-based application provisioning on ServiceHub?",
+    "expected_intent": "it_setup",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-IT-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "24 hours",
+        "label": "DURATION"
+      },
+      {
+        "text": "ServiceHub",
+        "label": "ORG"
+      }
+    ],
+    "id": "eval_054"
+  },
+  {
+    "question": "How do remote employees configure Cisco AnyConnect VPN with Microsoft Authenticator 2FA?",
+    "query": "How do remote employees configure Cisco AnyConnect VPN with Microsoft Authenticator 2FA?",
+    "expected_intent": "it_setup",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-IT-001_s2",
+      "vpn_mfa_section"
+    ],
+    "expected_entities": [
+      {
+        "text": "Cisco AnyConnect",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "Microsoft Authenticator",
+        "label": "PRODUCT"
+      }
+    ],
+    "id": "eval_055"
+  },
+  {
+    "question": "Where do I submit a ServiceNow request for database credentials?",
+    "query": "Where do I submit a ServiceNow request for database credentials?",
+    "expected_intent": "it_setup",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-IT-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "ServiceNow",
+        "label": "ORG"
+      },
+      {
+        "text": "ServiceHub",
+        "label": "ORG"
+      }
+    ],
+    "id": "eval_056"
+  },
+  {
+    "question": "What multi-factor authentication is required for secure remote access?",
+    "query": "What multi-factor authentication is required for secure remote access?",
+    "expected_intent": "it_setup",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-IT-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "Microsoft Authenticator",
+        "label": "PRODUCT"
+      }
+    ],
+    "id": "eval_057"
+  },
+  {
+    "question": "How long does personal trading pre-clearance remain valid on ComplianceDesk?",
+    "query": "How long does personal trading pre-clearance remain valid on ComplianceDesk?",
+    "expected_intent": "compliance",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-COMP-001_s1",
+      "compliance_preclearance"
+    ],
+    "expected_entities": [
+      {
+        "text": "ComplianceDesk",
+        "label": "ORG"
+      },
+      {
+        "text": "48 hours",
+        "label": "DURATION"
+      }
+    ],
+    "id": "eval_058"
+  },
+  {
+    "question": "What is the mandatory 30-day holding period for equity transactions under SEBI PIT Regulations 2015?",
+    "query": "What is the mandatory 30-day holding period for equity transactions under SEBI PIT Regulations 2015?",
+    "expected_intent": "compliance",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-COMP-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "30 days",
+        "label": "DURATION"
+      },
+      {
+        "text": "SEBI PIT Regulations 2015",
+        "label": "LAW"
+      }
+    ],
+    "id": "eval_059"
+  },
+  {
+    "question": "Are Access Persons prohibited from trading securities listed on the active grey list?",
+    "query": "Are Access Persons prohibited from trading securities listed on the active grey list?",
+    "expected_intent": "compliance",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-COMP-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "ComplianceDesk",
+        "label": "ORG"
+      }
+    ],
+    "id": "eval_060"
+  },
+  {
+    "question": "What Chinese Wall procedures enforce separation between research and dealing rooms?",
+    "query": "What Chinese Wall procedures enforce separation between research and dealing rooms?",
+    "expected_intent": "compliance",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-COMP-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "SEBI",
+        "label": "ORG"
+      }
+    ],
+    "id": "eval_061"
+  },
+  {
+    "question": "What are the regulatory penalties for sharing UPSI under SEBI insider trading rules?",
+    "query": "What are the regulatory penalties for sharing UPSI under SEBI insider trading rules?",
+    "expected_intent": "compliance",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-COMP-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "SEBI",
+        "label": "ORG"
+      }
+    ],
+    "id": "eval_062"
+  },
+  {
+    "question": "Where do new employees report for Day 1 induction and biometric registration?",
+    "query": "Where do new employees report for Day 1 induction and biometric registration?",
+    "expected_intent": "employment_policy",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-002_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "PeoplePulse",
+        "label": "ORG"
+      }
+    ],
+    "id": "eval_063"
+  },
+  {
+    "question": "Which advisors must complete the NISM-Series-V-A certification within 60 calendar days?",
+    "query": "Which advisors must complete the NISM-Series-V-A certification within 60 calendar days?",
+    "expected_intent": "employment_policy",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-002_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "NISM-Series-V-A",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "60 calendar days",
+        "label": "DURATION"
+      }
+    ],
+    "id": "eval_064"
+  },
+  {
+    "question": "What statutory declarations must new hires submit during Days 15\u201330 on PeoplePulse?",
+    "query": "What statutory declarations must new hires submit during Days 15\u201330 on PeoplePulse?",
+    "expected_intent": "employment_policy",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-002_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "PeoplePulse",
+        "label": "ORG"
+      },
+      {
+        "text": "Days 15\u201330",
+        "label": "ELIGIBILITY_PERIOD"
+      }
+    ],
+    "id": "eval_065"
   }
 ]
