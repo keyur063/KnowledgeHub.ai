@@ -1,0 +1,350 @@
+{
+  "timestamp": "2026-11-13T10:28:52Z",
+  "benchmark_info": {
+    "questions_count": 40,
+    "documents_indexed": 6,
+    "chunks_indexed": 13,
+    "intent_categories": [
+      "Approval Workflow",
+      "Employment Policy",
+      "Leave Policy",
+      "Reimbursement"
+    ]
+  },
+  "retrieval": {
+    "configurations": {
+      "tfidf": {
+        "name": "TF-IDF (Keyword Baseline)",
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.9875,
+        "avg_latency_ms": 0.71,
+        "samples_evaluated": 40
+      },
+      "semantic": {
+        "name": "SentenceTransformer (Semantic)",
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.9875,
+        "avg_latency_ms": 35.71,
+        "samples_evaluated": 40
+      },
+      "hybrid": {
+        "name": "Hybrid Fusion (alpha=0.5)",
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.9875,
+        "avg_latency_ms": 36.42,
+        "samples_evaluated": 40
+      },
+      "hybrid_intent": {
+        "name": "Hybrid + Intent Filter",
+        "precision_at_5": 0.19,
+        "recall_at_5": 0.95,
+        "mrr": 0.9375,
+        "avg_latency_ms": 37.62,
+        "samples_evaluated": 40
+      }
+    },
+    "chart_comparison": [
+      {
+        "mode": "TF-IDF (Keyword Baseline)",
+        "key": "tfidf",
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.9875,
+        "latency_ms": 0.71
+      },
+      {
+        "mode": "SentenceTransformer (Semantic)",
+        "key": "semantic",
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.9875,
+        "latency_ms": 35.71
+      },
+      {
+        "mode": "Hybrid Fusion (alpha=0.5)",
+        "key": "hybrid",
+        "precision_at_5": 0.2,
+        "recall_at_5": 1.0,
+        "mrr": 0.9875,
+        "latency_ms": 36.42
+      },
+      {
+        "mode": "Hybrid + Intent Filter",
+        "key": "hybrid_intent",
+        "precision_at_5": 0.19,
+        "recall_at_5": 0.95,
+        "mrr": 0.9375,
+        "latency_ms": 37.62
+      }
+    ],
+    "best_retriever": "tfidf"
+  },
+  "classification": {
+    "status": "success",
+    "dataset_info": {
+      "total_samples": 260,
+      "train_samples": 195,
+      "test_samples": 65,
+      "classes": [
+        "Approval Workflow",
+        "Employment Policy",
+        "Leave Policy",
+        "Reimbursement"
+      ],
+      "vocabulary_size": 2190
+    },
+    "models": {
+      "naive_bayes": {
+        "name": "Multinomial Naive Bayes",
+        "accuracy": 0.7231,
+        "precision": 0.7368,
+        "recall": 0.7231,
+        "f1_score": 0.7233,
+        "macro_f1": 0.7221,
+        "confusion_matrix": {
+          "labels": [
+            "Approval Workflow",
+            "Employment Policy",
+            "Leave Policy",
+            "Reimbursement"
+          ],
+          "matrix": [
+            [
+              9,
+              0,
+              2,
+              5
+            ],
+            [
+              2,
+              11,
+              2,
+              1
+            ],
+            [
+              2,
+              0,
+              14,
+              1
+            ],
+            [
+              2,
+              1,
+              0,
+              13
+            ]
+          ]
+        },
+        "per_class": {
+          "Approval Workflow": {
+            "precision": 0.6,
+            "recall": 0.5625,
+            "f1_score": 0.5806,
+            "support": 16
+          },
+          "Employment Policy": {
+            "precision": 0.9167,
+            "recall": 0.6875,
+            "f1_score": 0.7857,
+            "support": 16
+          },
+          "Leave Policy": {
+            "precision": 0.7778,
+            "recall": 0.8235,
+            "f1_score": 0.8,
+            "support": 17
+          },
+          "Reimbursement": {
+            "precision": 0.65,
+            "recall": 0.8125,
+            "f1_score": 0.7222,
+            "support": 16
+          }
+        }
+      },
+      "svm": {
+        "name": "Linear Support Vector Machine (LinearSVC)",
+        "accuracy": 0.8,
+        "precision": 0.7986,
+        "recall": 0.8,
+        "f1_score": 0.7936,
+        "macro_f1": 0.7925,
+        "confusion_matrix": {
+          "labels": [
+            "Approval Workflow",
+            "Employment Policy",
+            "Leave Policy",
+            "Reimbursement"
+          ],
+          "matrix": [
+            [
+              9,
+              1,
+              3,
+              3
+            ],
+            [
+              2,
+              13,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              16,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              14
+            ]
+          ]
+        },
+        "per_class": {
+          "Approval Workflow": {
+            "precision": 0.75,
+            "recall": 0.5625,
+            "f1_score": 0.6429,
+            "support": 16
+          },
+          "Employment Policy": {
+            "precision": 0.8667,
+            "recall": 0.8125,
+            "f1_score": 0.8387,
+            "support": 16
+          },
+          "Leave Policy": {
+            "precision": 0.8,
+            "recall": 0.9412,
+            "f1_score": 0.8649,
+            "support": 17
+          },
+          "Reimbursement": {
+            "precision": 0.7778,
+            "recall": 0.875,
+            "f1_score": 0.8235,
+            "support": 16
+          }
+        }
+      }
+    },
+    "best_model": "svm",
+    "comparison": {
+      "accuracy_diff": 0.0769,
+      "f1_diff": 0.0703,
+      "winner": "svm",
+      "summary": "LinearSVC achieved an F1-score of 0.7936 (Accuracy 0.8000) compared to MultinomialNB's F1-score of 0.7233 (Accuracy 0.7231). LinearSVC selected as primary classifier."
+    }
+  },
+  "ner": {
+    "total_benchmark_questions": 40,
+    "total_expected_entities": 140,
+    "total_extracted_entities": 66,
+    "true_positives": 41,
+    "precision": 0.6212,
+    "recall": 0.2929,
+    "f1_score": 0.3981,
+    "accuracy": 0.2929,
+    "label_breakdown": {
+      "DURATION": {
+        "expected": 33,
+        "true_positives": 5,
+        "recall": 0.1515
+      },
+      "LEAVE_TYPE": {
+        "expected": 15,
+        "true_positives": 11,
+        "recall": 0.7333
+      },
+      "ELIGIBILITY_PERIOD": {
+        "expected": 4,
+        "true_positives": 2,
+        "recall": 0.5
+      },
+      "DATE": {
+        "expected": 6,
+        "true_positives": 4,
+        "recall": 0.6667
+      },
+      "ORG": {
+        "expected": 35,
+        "true_positives": 14,
+        "recall": 0.4
+      },
+      "LAW": {
+        "expected": 1,
+        "true_positives": 0,
+        "recall": 0.0
+      },
+      "TIME": {
+        "expected": 7,
+        "true_positives": 0,
+        "recall": 0.0
+      },
+      "GPE": {
+        "expected": 2,
+        "true_positives": 0,
+        "recall": 0.0
+      },
+      "DOCUMENT": {
+        "expected": 2,
+        "true_positives": 0,
+        "recall": 0.0
+      },
+      "PRODUCT": {
+        "expected": 13,
+        "true_positives": 3,
+        "recall": 0.2308
+      },
+      "CARDINAL": {
+        "expected": 2,
+        "true_positives": 0,
+        "recall": 0.0
+      },
+      "TITLE": {
+        "expected": 3,
+        "true_positives": 0,
+        "recall": 0.0
+      },
+      "MONEY": {
+        "expected": 6,
+        "true_positives": 2,
+        "recall": 0.3333
+      },
+      "CATEGORY": {
+        "expected": 3,
+        "true_positives": 0,
+        "recall": 0.0
+      },
+      "CONCEPT": {
+        "expected": 6,
+        "true_positives": 0,
+        "recall": 0.0
+      },
+      "PERCENT": {
+        "expected": 1,
+        "true_positives": 0,
+        "recall": 0.0
+      },
+      "PAYMENT_METHOD": {
+        "expected": 1,
+        "true_positives": 0,
+        "recall": 0.0
+      }
+    }
+  },
+  "summary": {
+    "retrieval_winner": "tfidf",
+    "classification_winner": "svm",
+    "hybrid_mrr": 0.9875,
+    "tfidf_mrr": 0.9875,
+    "semantic_mrr": 0.9875,
+    "ner_f1": 0.3981
+  }
+}

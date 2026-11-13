@@ -1,0 +1,962 @@
+[
+  {
+    "id": "eval_001",
+    "query": "How many days of Earned Annual Leave are credited to employees per financial year?",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "18 days",
+        "label": "DURATION"
+      },
+      {
+        "text": "Earned Annual Leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "financial year",
+        "label": "ELIGIBILITY_PERIOD"
+      }
+    ]
+  },
+  {
+    "id": "eval_002",
+    "query": "What is the quarterly accrual rate for Earned Leave and the maximum carry forward cap?",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "4.5 days",
+        "label": "DURATION"
+      },
+      {
+        "text": "45 days",
+        "label": "DURATION"
+      },
+      {
+        "text": "Earned Leave",
+        "label": "LEAVE_TYPE"
+      }
+    ]
+  },
+  {
+    "id": "eval_003",
+    "query": "How many days of Casual/Sick Leave are credited annually on April 1st?",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "12 days",
+        "label": "DURATION"
+      },
+      {
+        "text": "Casual/Sick Leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "April 1st",
+        "label": "DATE"
+      }
+    ]
+  },
+  {
+    "id": "eval_004",
+    "query": "How do employees apply for leave on the PeoplePulse HRMS portal?",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "PeoplePulse",
+        "label": "ORG"
+      },
+      {
+        "text": "Earned Leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "Casual Leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "Sick Leave",
+        "label": "LEAVE_TYPE"
+      }
+    ]
+  },
+  {
+    "id": "eval_005",
+    "query": "What is the manager approval SLA and advance notice required for leave over 3 consecutive business days?",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "3 consecutive business days",
+        "label": "DURATION"
+      },
+      {
+        "text": "7 working days",
+        "label": "DURATION"
+      },
+      {
+        "text": "48-hour",
+        "label": "DURATION"
+      },
+      {
+        "text": "72 hours",
+        "label": "DURATION"
+      }
+    ]
+  },
+  {
+    "id": "eval_006",
+    "query": "How many weeks of paid Maternity Leave are female employees entitled to?",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s3"
+    ],
+    "expected_entities": [
+      {
+        "text": "26 weeks",
+        "label": "DURATION"
+      },
+      {
+        "text": "Maternity Leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "Maternity Benefit Act",
+        "label": "LAW"
+      }
+    ]
+  },
+  {
+    "id": "eval_007",
+    "query": "What is the Paternity Leave and Bereavement Leave duration granted to DSPAMC employees?",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s3"
+    ],
+    "expected_entities": [
+      {
+        "text": "10 working days",
+        "label": "DURATION"
+      },
+      {
+        "text": "Paternity Leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "6 months",
+        "label": "ELIGIBILITY_PERIOD"
+      },
+      {
+        "text": "5 working days",
+        "label": "DURATION"
+      },
+      {
+        "text": "Bereavement Leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "12 weeks",
+        "label": "DURATION"
+      },
+      {
+        "text": "Adoption Leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "DSPAMC",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_008",
+    "query": "Where and when should new hires report for Day 1 induction at DSPAMC?",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-002_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "One BKC",
+        "label": "ORG"
+      },
+      {
+        "text": "Day 1",
+        "label": "DATE"
+      },
+      {
+        "text": "09:30 IST",
+        "label": "TIME"
+      },
+      {
+        "text": "Mumbai",
+        "label": "GPE"
+      },
+      {
+        "text": "DSPAMC",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_009",
+    "query": "What statutory declarations must new joiners complete between Days 15 to 30?",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-002_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "Days 15\u201330",
+        "label": "ELIGIBILITY_PERIOD"
+      },
+      {
+        "text": "PF Form 11",
+        "label": "DOCUMENT"
+      },
+      {
+        "text": "Gratuity Form F",
+        "label": "DOCUMENT"
+      },
+      {
+        "text": "Mediclaim",
+        "label": "PRODUCT"
+      }
+    ]
+  },
+  {
+    "id": "eval_010",
+    "query": "Within how many calendar days must wealth advisors and research analysts obtain NISM certifications?",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-002_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "60 calendar days",
+        "label": "DURATION"
+      },
+      {
+        "text": "NISM-Series-V-A",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "NISM-Series-XV",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "DSP L&D Portal",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_011",
+    "query": "How do employees request access to Bloomberg Terminal or Qdrant Vector Store on ServiceHub?",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-IT-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "ServiceHub",
+        "label": "ORG"
+      },
+      {
+        "text": "Bloomberg Terminal",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "Qdrant Vector Store",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "24 hours",
+        "label": "DURATION"
+      }
+    ]
+  },
+  {
+    "id": "eval_012",
+    "query": "What are the remote VPN and MFA authentication requirements for DSPAMC staff?",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-IT-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "Cisco AnyConnect",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "Microsoft Authenticator",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "YubiKey",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "14 characters",
+        "label": "CARDINAL"
+      },
+      {
+        "text": "90 days",
+        "label": "DURATION"
+      }
+    ]
+  },
+  {
+    "id": "eval_013",
+    "query": "What is the submission deadline for filing travel expense claims via SAP Concur?",
+    "category": "Reimbursement",
+    "expected_chunk_ids": [
+      "DSP-FIN-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "SAP Concur",
+        "label": "ORG"
+      },
+      {
+        "text": "30 calendar days",
+        "label": "DURATION"
+      },
+      {
+        "text": "45 days",
+        "label": "DURATION"
+      },
+      {
+        "text": "5 business days",
+        "label": "DURATION"
+      },
+      {
+        "text": "CFO",
+        "label": "TITLE"
+      }
+    ]
+  },
+  {
+    "id": "eval_014",
+    "query": "What are the metro accommodation cap and daily per diem subsistence allowance limits?",
+    "category": "Reimbursement",
+    "expected_chunk_ids": [
+      "DSP-FIN-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "\u20b98,500/night",
+        "label": "MONEY"
+      },
+      {
+        "text": "\u20b95,500/night",
+        "label": "MONEY"
+      },
+      {
+        "text": "\u20b91,800/day",
+        "label": "MONEY"
+      },
+      {
+        "text": "Mumbai",
+        "label": "GPE"
+      },
+      {
+        "text": "Tier-1",
+        "label": "CATEGORY"
+      }
+    ]
+  },
+  {
+    "id": "eval_015",
+    "query": "What is the pre-clearance validity period and holding rule under the SEBI personal trading code?",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-COMP-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "48 hours",
+        "label": "DURATION"
+      },
+      {
+        "text": "30-calendar-day",
+        "label": "DURATION"
+      },
+      {
+        "text": "ComplianceDesk",
+        "label": "ORG"
+      },
+      {
+        "text": "SEBI",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_016",
+    "query": "What is the Chinese Wall policy for Unpublished Price Sensitive Information (UPSI)?",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-COMP-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "Chinese Walls",
+        "label": "CONCEPT"
+      },
+      {
+        "text": "UPSI",
+        "label": "CONCEPT"
+      },
+      {
+        "text": "SEBI",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_017",
+    "query": "What are the trade settlement timeline and STP cut-off on trade day?",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-OPS-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "18:30 IST",
+        "label": "TIME"
+      },
+      {
+        "text": "T+1",
+        "label": "DATE"
+      },
+      {
+        "text": "CCIL",
+        "label": "ORG"
+      },
+      {
+        "text": "NSCCL",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_018",
+    "query": "When are scheme NAVs calculated daily and disseminated to AMFI?",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-OPS-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "16:30 IST",
+        "label": "TIME"
+      },
+      {
+        "text": "23:00 IST",
+        "label": "TIME"
+      },
+      {
+        "text": "AMFI",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_019",
+    "query": "Can unutilized Earned Leave beyond 45 days be encashed by full-time employees?",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "45 days",
+        "label": "DURATION"
+      },
+      {
+        "text": "Earned Leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "AMFI",
+        "label": "ORG"
+      },
+      {
+        "text": "DSPAMC",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_020",
+    "query": "What is the manager escalation timeline if a leave application is not actioned after 48 hours?",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "48-hour",
+        "label": "DURATION"
+      },
+      {
+        "text": "72 hours",
+        "label": "DURATION"
+      },
+      {
+        "text": "PeoplePulse",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_021",
+    "query": "How many weeks of Adoption Leave are available to DSPAMC employees?",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s3"
+    ],
+    "expected_entities": [
+      {
+        "text": "12 weeks",
+        "label": "DURATION"
+      },
+      {
+        "text": "Adoption Leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "DSPAMC",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_022",
+    "query": "What are the Day 1 induction activities for new employees arriving at One BKC Mumbai?",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-002_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "Day 1",
+        "label": "DATE"
+      },
+      {
+        "text": "One BKC",
+        "label": "ORG"
+      },
+      {
+        "text": "09:30 IST",
+        "label": "TIME"
+      }
+    ]
+  },
+  {
+    "id": "eval_023",
+    "query": "Who reimburses the exam registration fees for NISM-Series-XV certification?",
+    "category": "Reimbursement",
+    "expected_chunk_ids": [
+      "DSP-HR-002_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "DSP L&D Portal",
+        "label": "ORG"
+      },
+      {
+        "text": "NISM-Series-XV",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "100%",
+        "label": "PERCENT"
+      }
+    ]
+  },
+  {
+    "id": "eval_024",
+    "query": "What systems can be requested via the DSP ServiceHub application access portal?",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-IT-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "DSP ServiceHub",
+        "label": "ORG"
+      },
+      {
+        "text": "Bloomberg Terminal",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "Refinitiv Eikon",
+        "label": "PRODUCT"
+      },
+      {
+        "text": "Qdrant",
+        "label": "PRODUCT"
+      }
+    ]
+  },
+  {
+    "id": "eval_025",
+    "query": "What password complexity rules and 90 days expiry are mandated for DSP accounts?",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-IT-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "14 characters",
+        "label": "CARDINAL"
+      },
+      {
+        "text": "90 days",
+        "label": "DURATION"
+      },
+      {
+        "text": "Microsoft Authenticator",
+        "label": "PRODUCT"
+      }
+    ]
+  },
+  {
+    "id": "eval_026",
+    "query": "Why are expense claims filed past 45 days rejected without CFO approval?",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-FIN-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "45 days",
+        "label": "DURATION"
+      },
+      {
+        "text": "CFO",
+        "label": "TITLE"
+      },
+      {
+        "text": "SAP Concur",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_027",
+    "query": "What is the per diem incidental rate of \u20b91,800/day for Tier-1 metros?",
+    "category": "Reimbursement",
+    "expected_chunk_ids": [
+      "DSP-FIN-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "\u20b91,800/day",
+        "label": "MONEY"
+      },
+      {
+        "text": "Tier-1",
+        "label": "CATEGORY"
+      },
+      {
+        "text": "DSPAMC",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_028",
+    "query": "How many days must Access Persons hold approved securities under the SEBI code?",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-COMP-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "30-calendar-day",
+        "label": "DURATION"
+      },
+      {
+        "text": "SEBI",
+        "label": "ORG"
+      },
+      {
+        "text": "ComplianceDesk",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_029",
+    "query": "What is the consequence of sharing Unpublished Price Sensitive Information without authorization?",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-COMP-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "UPSI",
+        "label": "CONCEPT"
+      },
+      {
+        "text": "SEBI",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_030",
+    "query": "How does automated Straight-Through Processing (STP) settle equity orders across NSE and BSE?",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-OPS-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "STP",
+        "label": "CONCEPT"
+      },
+      {
+        "text": "T+1",
+        "label": "DATE"
+      },
+      {
+        "text": "CCIL",
+        "label": "ORG"
+      },
+      {
+        "text": "NSCCL",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_031",
+    "query": "Who must provide dual-signoff on mutual fund NAVs before 23:00 IST AMFI submission?",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-OPS-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "23:00 IST",
+        "label": "TIME"
+      },
+      {
+        "text": "AMFI",
+        "label": "ORG"
+      },
+      {
+        "text": "16:30 IST",
+        "label": "TIME"
+      }
+    ]
+  },
+  {
+    "id": "eval_032",
+    "query": "How many days of Paternity Leave must be taken within 6 months of childbirth?",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s3"
+    ],
+    "expected_entities": [
+      {
+        "text": "10 working days",
+        "label": "DURATION"
+      },
+      {
+        "text": "Paternity Leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "6 months",
+        "label": "ELIGIBILITY_PERIOD"
+      }
+    ]
+  },
+  {
+    "id": "eval_033",
+    "query": "What is the flight travel class policy for Associate Vice Presidents and below?",
+    "category": "Reimbursement",
+    "expected_chunk_ids": [
+      "DSP-FIN-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "Economy Class",
+        "label": "CATEGORY"
+      },
+      {
+        "text": "Associate Vice President",
+        "label": "TITLE"
+      },
+      {
+        "text": "6 hours",
+        "label": "DURATION"
+      }
+    ]
+  },
+  {
+    "id": "eval_034",
+    "query": "How long are trade pre-clearance approvals valid on the DSP ComplianceDesk portal?",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-COMP-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "48 hours",
+        "label": "DURATION"
+      },
+      {
+        "text": "DSP ComplianceDesk",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_035",
+    "query": "What IT workstation setup and Peer Buddy meeting take place during Week 1 onboarding?",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-002_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "Week 1",
+        "label": "DATE"
+      },
+      {
+        "text": "ServiceNow",
+        "label": "ORG"
+      },
+      {
+        "text": "PeoplePulse",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_036",
+    "query": "What notice period must employees provide when applying for 4 days of Earned Leave?",
+    "category": "Approval Workflow",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "7 working days",
+        "label": "DURATION"
+      },
+      {
+        "text": "Earned Leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "PeoplePulse",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_037",
+    "query": "How is NEFT reimbursement credited within 5 business days after line manager approval?",
+    "category": "Reimbursement",
+    "expected_chunk_ids": [
+      "DSP-FIN-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "5 business days",
+        "label": "DURATION"
+      },
+      {
+        "text": "NEFT",
+        "label": "PAYMENT_METHOD"
+      },
+      {
+        "text": "SAP Concur",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_038",
+    "query": "What is the accommodation limit of \u20b95,500/night for non-metro business trips?",
+    "category": "Reimbursement",
+    "expected_chunk_ids": [
+      "DSP-FIN-001_s2"
+    ],
+    "expected_entities": [
+      {
+        "text": "\u20b95,500/night",
+        "label": "MONEY"
+      },
+      {
+        "text": "\u20b98,500/night",
+        "label": "MONEY"
+      }
+    ]
+  },
+  {
+    "id": "eval_039",
+    "query": "Why are trades in securities listed on the DSP Restricted List automatically denied pre-clearance?",
+    "category": "Employment Policy",
+    "expected_chunk_ids": [
+      "DSP-COMP-001_s1"
+    ],
+    "expected_entities": [
+      {
+        "text": "Restricted List",
+        "label": "CONCEPT"
+      },
+      {
+        "text": "Grey List",
+        "label": "CONCEPT"
+      },
+      {
+        "text": "DSP",
+        "label": "ORG"
+      }
+    ]
+  },
+  {
+    "id": "eval_040",
+    "query": "How many days of paid Bereavement Leave does DSPAMC offer for grieving employees?",
+    "category": "Leave Policy",
+    "expected_chunk_ids": [
+      "DSP-HR-001_s3"
+    ],
+    "expected_entities": [
+      {
+        "text": "5 working days",
+        "label": "DURATION"
+      },
+      {
+        "text": "Bereavement Leave",
+        "label": "LEAVE_TYPE"
+      },
+      {
+        "text": "DSPAMC",
+        "label": "ORG"
+      }
+    ]
+  }
+]
